@@ -10,6 +10,26 @@ div.container-fluid {
   border-color: transparent;
 }
 
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #CCCCCC;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-header .navbar-brand:focus, .navbar-default .navbar-header .navbar-brand:hover {
+    color: #003366;
+}
+
+.navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
+    color: #CCCCCC!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li>a:focus:hover, .navbar-default .nav>li>a:hover {
+    color: #CCCC99;
+}
+
 .navbar-default .navbar-header .navbar-brand {
      font-family: 'Alegreya Sans SC', sans-serif;
      text-transform: capitalize;
@@ -17,6 +37,10 @@ div.container-fluid {
      font-weight: 300;
      letter-spacing: 3px;
    }
+
+   .navbar-default .navbar-header .navbar-brand:focus, .navbar-default .navbar-header .navbar-brand:hover {
+    color: #CCCC99;
+}
 
    .navbar-default.affix .navbar-header .navbar-brand {
     color: #003366;
@@ -32,10 +56,6 @@ div.container-fluid {
     letter-spacing: 3px;
   }
 
-  .navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus  {
-      color: #CCCC99;
-      background-color: transparent;
-  }
 
 .navbar-default.affix .navbar-header .navbar-brand:focus, .navbar-default.affix .navbar-header .navbar-brand:hover {
   color: #CCCC99;
@@ -79,6 +99,24 @@ border-color: #003366;
 }
 
 /* about styling */
+#about {
+  padding-top: 160px;
+    padding-bottom: 182px;
+}
+
+
+#about iframe {
+  width: 100%;
+  height: calc(200px + 5vw);
+}
+#about .col-md-6 {
+  padding-right: 50px;
+
+}
+
+.text-faded {
+    color: #fff; 
+}
 
 h2.section-heading {
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -91,7 +129,6 @@ h3.about {
 }
 
 hr {
-
     border-width: 2px;
     max-width: 150px;
     margin-left: 0px;
@@ -104,7 +141,6 @@ ul {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
-
 }
 
 ul#eventdetail li {
@@ -125,7 +161,6 @@ p {
 }
 
 section#event {
-
   background-color: #003366;
 }
 
@@ -134,12 +169,10 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #FFFFFF;
-
 }
 
 .btn.focus, .btn:focus, .btn:hover {
     color: #CCCCCC;
-
 }
 
 .btn {
@@ -149,9 +182,51 @@ body {
     text-transform: uppercase;
     background-color: transparent;
   }
+
 .donatebtn {
   text-align: center;
+  padding-top: 45px;
 }
+
+div.buy {
+  text-align: center;
+  padding-top: 32px;
+}
+
+
+/* slider styling*/
+
+#gallerypage {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+#carouselCont {
+  width:500px;
+  height:350px;
+}
+ul#schedule {
+  padding-top: 10px;
+}
+
+ul#schedule li {
+  border-bottom: 2px dotted;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  list-style: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #003366;
+}
+
+ul#schedule li:first-child {
+  border-top: 2px dotted;
+}
+
 
 
 
@@ -159,12 +234,16 @@ body {
 
 section#contact {
   background-color: #CCCC99;
-  padding: 50px 0;
+
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
+
 
 #contact .col-md-6 {
   text-align: center;
 }
+
 .img-circle {
     border-radius: 50%;
     height: 225px;
@@ -185,23 +264,29 @@ p.contactinfo {
 
 }
 
-#about iframe {
-  width: 100%;
-  height: calc(200px + 5vw);
+/* sponsor styling*/
+
+img#sponsor1.img-reponsive {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#gallerypage {
-
-  padding-top: 30px;
-  padding-bottom: 30px;
-
+img#sponsor2.img-reponsive {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-#carouselCont {
-  width: 75%;
-  margin: 0 auto;
+img#sponsor3.img-reponsive {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
   ul {
@@ -211,12 +296,25 @@ p.contactinfo {
 
 @media (max-width: 320px) {
 .navbar-default .navbar-header .navbar-brand {
-  font-size: 13px;
-}
-h1#homeHeading {
-    font-size: 20px;
-    padding-top: 15px;
+  font-size: 12px;
 }
 .navbar-default.affix .navbar-header .navbar-brand {
-  font-size: 13px;
+ font-size: 12px;
+}
+.navbar-header{
+  display: flex;
+  flex-direction: row-reverse;
+  height:100px;
+}
+.header-content-inner{
+
+  margin-top:100px
+}
+}
+
+@media (max-width:320px) {
+#carouselCont {
+  width:100%;
+  height:auto;
+}
 }
