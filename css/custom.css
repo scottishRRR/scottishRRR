@@ -64,11 +64,39 @@ div.container-fluid {
 .navbar-default.affix .nav>li>a:focus:hover, .navbar-default.affix .nav>li>a:hover {
     color: #CCCC99;
 }
-
+.borderBtn{
+  border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.borderBtn:hover {
+    background-color: #003366;
+    color: #CCC;
+}
+.scheduleBtn {
+  border-color: #003366;
+  color:#003366;
+  margin-left: 20px;
+}
+.leadBtn{
+  color: #fff;
+}
 
 /*headerstyling*/
 header {
   background-image: url('../img/chalk.jpg')
+}
+header .header-content .header-content-inner {
+
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+#headerphoto {
+  height: 150px;
+  padding-bottom: 10px;
 }
 
 header .header-content .header-content-inner h1 {
@@ -90,7 +118,7 @@ letter-spacing: 3px;
 }
 
 .bg-primary {
-  background-color: #777777;
+  background-color: #c0c0c0;
 }
 
 hr {
@@ -99,10 +127,6 @@ border-color: #003366;
 }
 
 /* about styling */
-#about {
-  padding-top: 160px;
-    padding-bottom: 182px;
-}
 
 
 #about iframe {
@@ -115,7 +139,7 @@ border-color: #003366;
 }
 
 .text-faded {
-    color: #fff; 
+    color: #fff;
 }
 
 h2.section-heading {
@@ -133,6 +157,34 @@ hr {
     max-width: 150px;
     margin-left: 0px;
 }
+
+img#sponsor1.img-reponsive {
+    margin-top: 60px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img#sponsor2.img-reponsive {
+    margin-top: 60px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img#sponsor3.img-reponsive {
+  margin-top: 60px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 
 /* event styling*/
 ul {
@@ -175,13 +227,6 @@ body {
     color: #CCCCCC;
 }
 
-.btn {
-    border: 2px solid white;
-    border-radius: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: transparent;
-  }
 
 .donatebtn {
   text-align: center;
@@ -227,7 +272,15 @@ ul#schedule li:first-child {
   border-top: 2px dotted;
 }
 
-
+.auction {
+  display: inline;
+  border: 2px solid white;
+  border-color: #003366;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+}
 
 
 /* contact styling*/
@@ -254,6 +307,7 @@ section#contact {
 h2.contact {
   text-align: center;
   font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 40px;
 }
 
 p.contactinfo {
@@ -266,26 +320,38 @@ p.contactinfo {
 
 /* sponsor styling*/
 
-img#sponsor1.img-reponsive {
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+
+
+#sponsorh2 {
+  margin-top: 10px;
+  color: #003366;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transfo
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 38px;
 }
 
-img#sponsor2.img-reponsive {
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+a:focus, a:hover {
+    color: #CCCC99;
 }
 
-img#sponsor3.img-reponsive {
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+a {
+    transition: all .35s;
+    color: #003366;
+
 }
+
+ul#sponsorlist li {
+
+  margin-top: 20px;
+  color: #003366;
+}
+
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
@@ -317,4 +383,11 @@ img#sponsor3.img-reponsive {
   width:100%;
   height:auto;
 }
+}
+
+
+
+
+.donateBtn{
+
 }
